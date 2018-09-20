@@ -1,3 +1,7 @@
+Pipfile
+Pipfile.lock
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -102,7 +106,3 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-
-# Pipfile and Pipfile.lock
-Pipfile
-Pipfile.lock
