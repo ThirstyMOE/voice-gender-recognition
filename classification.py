@@ -1,6 +1,14 @@
 import pandas as pd
 from sklearn.svm import SVC
 
+"""
+    Dataset from https://www.kaggle.com/primaryobjects/voicegender/home
+
+    Using Sci Kit Learn's machine learning libraries to do basic binary classification.
+    Pandas for dataset manipulation and preprocessing
+    Numpy for numerical computations (Currently only for getting unique values in list)
+"""
+
 percent_training = 0.8
 
 # Change the display options for displaying the dataframe to the screen
@@ -8,6 +16,10 @@ pd.set_option("display.max_columns", 1000)
 pd.set_option("display.max_rows", 20)
 
 def data_preprocessing():
+    """
+        post: Returns the training features, labels, and test features, labels in the form of
+            pandas data_frames, from the Kaggle dataset as a source
+    """
     source_df = pd.read_csv("voice.csv")
 
     # Accessed at https://stackoverflow.com/questions/29576430/shuffle-dataframe-rows on 9-21-2018
